@@ -1,7 +1,6 @@
 /**
  *
  * @author Ronkalot Co
- *tilbeke
  */
 public class Papers extends Literature
     {
