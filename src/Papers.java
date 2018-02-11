@@ -1,7 +1,6 @@
 /**
  *
  * @author Ronkalot Co
- * test yolo
  */
 public class Papers extends Literature
     {
