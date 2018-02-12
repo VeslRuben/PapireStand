@@ -23,12 +23,15 @@ public class Main {
         System.out.println(reg.getBookByGenre("porno"));
         System.out.println(reg.getBookBytitle("Playboy"));
         System.out.println(reg.getAllBooks());
+        System.out.println("");
 
 
 
 
 
         reg.printAllInfo();
+        System.out.println("");
+        reg.printAllInfo2();
 
 
 

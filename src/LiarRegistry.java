@@ -259,6 +259,11 @@ public class LiarRegistry {
         }
     }
 
+    public void printAllInfo2() {
+        this.listOfAllBooks.forEach((Book book) -> System.out.println(String.format("Title %s, Author %s, Genre %s, Publisher %s, Date Publisht %s, Edition %s, Number of pages %o, In stock %o",
+                book.getTitle(), book.getAuthor(), book.getGenre(), book.getPublisher(), book.getDatePublished(), book.getEdition(), book.getNumberOfPages(), book.getQuantity())));
+    }
+
 
 
 
