@@ -240,6 +240,10 @@ public class LiarRegistry {
         return temp;
     }
 
+    /**
+     * Returns all books i the system.
+     * @return An ArrayList of all the books in the system.
+     */
     public ArrayList<Book> getAllBooks() {
         return this.listOfAllBooks;
     }

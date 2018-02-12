@@ -16,7 +16,15 @@ public class Main {
 
         LiarRegistry reg = new LiarRegistry(list);
 
-        //reg.addBook(new Book("finn", "finn", "porno", "Frank", "5520", "1", 2, 9));
+        reg.addBook(new Book("Yolo", "Marit", "Livsstil", "Frank", "5520", "8", 2, 9));
+        reg.removeBook("Sex på stallen");
+
+        System.out.println(reg.getBookByAuthor("finn"));
+        System.out.println(reg.getBookByGenre("porno"));
+        System.out.println(reg.getBookBytitle("Playboy"));
+        System.out.println(reg.getAllBooks());
+
+
 
 
 
