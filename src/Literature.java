@@ -1,7 +1,6 @@
 /**
  *
  * @author Ronkalot Co
- * uy
  */
 public class Literature {
 
