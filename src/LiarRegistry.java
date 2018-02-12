@@ -54,7 +54,7 @@ public class LiarRegistry {
     }
 
     /**
-     * Putts all books by the same author in to a HasMap with the name of the author as key.
+     * Puts all books by the same author in to a HashMap with the name of the author as key.
      */
     private void sortToAuthorMap() {
         ArrayList<Book> tmpNumberOfBooks = (ArrayList<Book>)this.listOfAllBooks.clone();
