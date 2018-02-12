@@ -1,6 +1,4 @@
 /**
- * Yolo Swaggins was here
- *
  * @author Ronkalot Co
  */
 public class Papers extends Literature
