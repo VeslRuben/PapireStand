@@ -1,5 +1,5 @@
 /**
- *
+ * YOLO
  * @author Ronkalot Co
  */
 public class Book extends Literature {
