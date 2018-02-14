@@ -29,7 +29,9 @@ public class LiarRegistry {
         //Sorts out the duplicates before initialising listOfAllBooks
         for (int i = 0; i < books.size(); i++) {
             for (int j = i + 1; j < books.size(); j++) {
-                if (books.get(i).getTitle().toLowerCase().equals(books.get(j).getTitle().toLowerCase()) && books.get(i).getAuthor().toLowerCase().equals(books.get(j).getAuthor().toLowerCase()) && books.get(i).getEdition().equals(books.get(j).getEdition())) {
+                if (books.get(i).getTitle().toLowerCase().equals(books.get(j).getTitle().toLowerCase()) &&
+                        books.get(i).getAuthor().toLowerCase().equals(books.get(j).getAuthor().toLowerCase()) && books.get(i).getEdition().equals(books.get(j).getEdition())) {
+
                     books.get(i).setQuantity(books.get(i).getQuantity() + books.get(j).getQuantity());
                     books.remove(j);
                     j--;
@@ -165,9 +167,11 @@ public class LiarRegistry {
             int quantity = book.getQuantity();
             matchingBookInReg.setQuantity(matchingBookInReg.getQuantity() + quantity);
         }
-        this.listOfAllBooks.add(book);
-        this.sortToGenreMap();
-        this.sortToAuthorMap();
+        else {
+            this.listOfAllBooks.add(book);
+            this.sortToGenreMap();
+            this.sortToAuthorMap();
+        }
 
     }
 
@@ -175,6 +179,8 @@ public class LiarRegistry {
      * Adds an ArrayList of books to the list of books.
      * if a book already exists in the registry the quantity is added to the existing book.
      * @param books an ArrayList of books
+     *
+     *    må fikses!!
      */
     public void addBooks (ArrayList<Book> books) {
         for (Book book : books) {
@@ -250,6 +256,8 @@ public class LiarRegistry {
 
     /**
      * Prints out all info about all books.
+     *
+     *     Må fikses!!
      */
     public void printAllInfo() {
         for (Book book : this.listOfAllBooks) {
