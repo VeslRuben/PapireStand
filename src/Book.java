@@ -1,6 +1,9 @@
 /**
+ * This class represents a book and contains all information on the book,
+ * as well as the methods to return and/or change this info.
  *
- * @author Ronkalot Co
+ * @author Ruben S. J., Håkon B. W., Jan Tore S. M., Gruppe 16
+ * @version 2018-02-15
  */
 public class Book extends Literature {
     private String author;

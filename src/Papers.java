@@ -1,5 +1,6 @@
 /**
- * @author Ronkalot Co
+ * @author Ruben S. J., Håkon B. W., Jan Tore S. M., Gruppe 16
+ * @version 2018-02-15
  */
 public class Papers extends Literature
     {

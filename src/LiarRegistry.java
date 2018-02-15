@@ -5,9 +5,11 @@ import java.util.Set;
 
 
 /**
- * A class for collecting an keeping track of Book objects..
- * The class contends various methods for sorting and organising Books
- * @author Ronkalot Co
+ * A class for collecting and keeping track of literature objects.
+ * The class contains various methods for sorting, organising and printing information on literature.
+ *
+ * @author Ruben S. J., Håkon B. W., Jan Tore S. M., Gruppe 16
+ * @version 2018-02-15
  */
 public class LiarRegistry {
 
