@@ -256,19 +256,17 @@ public class LiarRegistry {
 
     /**
      * Prints out all info about all books.
-     *
-     *     Må fikses!!
      */
     public void printAllInfo() {
         for (Book book : this.listOfAllBooks) {
-            String info = String.format("Title %s, Author %s, Genre %s, Publisher %s, Date Publisht %s, Edition %s, Number of pages %o, In stock %o",
-                    book.getTitle(), book.getAuthor(), book.getGenre(), book.getPublisher(), book.getDatePublished(), book.getEdition(), book.getNumberOfPages(), book.getQuantity());
+            String info = String.format("Title %s, Author %s, Series %s, Genre %s, Publisher %s, Date Published %s, Edition %s, Number of pages %o, In stock %o",
+                    book.getTitle(), book.getAuthor(), book.getSeriesTitle(), book.getGenre(), book.getPublisher(), book.getDatePublished(), book.getEdition(), book.getNumberOfPages(), book.getQuantity());
             System.out.println(info);
         }
     }
 
     public void printAllInfo2() {
-        this.listOfAllBooks.forEach((Book book) -> System.out.println(String.format("Title %s, Author %s, Genre %s, Publisher %s, Date Publisht %s, Edition %s, Number of pages %o, In stock %o",
+        this.listOfAllBooks.forEach((Book book) -> System.out.println(String.format("Title %s, Author %s, Genre %s, Publisher %s, Date Published %s, Edition %s, Number of pages %o, In stock %o",
                 book.getTitle(), book.getAuthor(), book.getGenre(), book.getPublisher(), book.getDatePublished(), book.getEdition(), book.getNumberOfPages(), book.getQuantity())));
     }
 
