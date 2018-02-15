@@ -45,17 +45,25 @@ public class Book extends Literature {
         this.edition = edition;
     }
 
+    /**
+     * Returns the name of the author
+     * @return The name of the author
+     */
     public String getAuthor(){
         return this.author;
     }
 
+    /**
+     * Sets the name of the author
+     * @param author The name of the author
+     */
     public void setAuthor(String author){
         this.author = author;
     }
 
     /**
      * Checks if the book is part of a series by checking if seriesTitle is null or not. Returns a text with series-name
-     * if it is not null, and returns message that the book is not part of a series if seriesTitle = null.
+     * if not null, and returns message that the book is not part of a series if seriesTitle = null.
      *
      * @return The name of the series, if the book is part of one.
      */
@@ -64,18 +72,30 @@ public class Book extends Literature {
             return this.seriesTitle;
         }
         else {
-            return "Not part of a series";
+            return "Not a series";
         }
     }
 
+    /**
+     * Sets the series title
+     * @param seriesTitle The series title
+     */
     public void setSeriesTitle(String seriesTitle){
         this.seriesTitle = seriesTitle;
     }
 
+    /**
+     * Returns the edition of the book
+     * @return The edition of the book
+     */
     public String getEdition(){
         return this.edition;
     }
 
+    /**
+     * Sets the edition of the book
+     * @param edition The edition of the book
+     */
     public void setEdition(String edition){
         this.edition = edition;
     }

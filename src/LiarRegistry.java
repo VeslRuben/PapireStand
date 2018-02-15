@@ -12,7 +12,6 @@ import java.util.Set;
 public class LiarRegistry {
 
     private ArrayList<Book> listOfAllBooks;
-    private ArrayList<Papers> listOfAllPapers;
     private HashMap<String, ArrayList<Book>> authorList;
     private HashMap<String, ArrayList<Book>> genreList;
 
@@ -41,9 +40,6 @@ public class LiarRegistry {
         this.listOfAllBooks = books;
         this.sortToAuthorMap();
         this.sortToGenreMap();
-        //System.out.println(authorList);
-        //System.out.println(genreList);
-        //System.out.println(this.listOfAllBooks);
     }
 
     /**
@@ -179,10 +175,9 @@ public class LiarRegistry {
      * Adds an ArrayList of books to the list of books.
      * if a book already exists in the registry the quantity is added to the existing book.
      * @param books an ArrayList of books
-     *
-     *    må fikses!!
      */
     public void addBooks (ArrayList<Book> books) {
+        boolean newBookRegistered = false;
         for (Book book : books) {
             Book matchingBookInReg = this.isDuplicate(book);
             if (matchingBookInReg != null) {
@@ -191,10 +186,13 @@ public class LiarRegistry {
             }
             else {
                 this.listOfAllBooks.add(book);
+                newBookRegistered = true;
             }
         }
-        this.sortToGenreMap();
-        this.sortToAuthorMap();
+        if (newBookRegistered) {
+            this.sortToGenreMap();
+            this.sortToAuthorMap();
+        }
     }
 
 
