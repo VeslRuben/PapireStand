@@ -14,7 +14,8 @@ public class Main {
         list.add(new Book("Playboy", "finn", "porno", "Frank", "01.05.1985", "1", 2, 2));
         list.add(new Book("Playboy", "finn", "porno", "Frank", "01.05.1985", "2", 2, 7));
 
-        LiarRegistry reg = new LiarRegistry(list);
+
+        LiteratureRegistry reg = new LiteratureRegistry(list);
 
         reg.addBook(new Book("Yolo", "Marit", "Livsstil", "Frank", "5520", "8", 2, 9));
         reg.removeBook("Sex på stallen");
