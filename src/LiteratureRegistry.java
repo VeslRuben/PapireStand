@@ -11,7 +11,7 @@ import java.util.Set;
  * @author Ruben S. J., Håkon B. W., Jan Tore S. M., Gruppe 16
  * @version 2018-02-15
  */
-public class LiarRegistry {
+public class LiteratureRegistry {
 
     private ArrayList<Book> listOfAllBooks;
     private HashMap<String, ArrayList<Book>> authorList;
@@ -23,7 +23,7 @@ public class LiarRegistry {
      * Constructs the object
      * @param books A initial ArrayList off books
      */
-    public LiarRegistry(ArrayList<Book> books) {
+    public LiteratureRegistry(ArrayList<Book> books) {
         this.authorList = new HashMap<>();
         this.genreList = new HashMap<>();
 
@@ -47,7 +47,7 @@ public class LiarRegistry {
     /**
      * Constructs the object.
      */
-    public LiarRegistry() {
+    public LiteratureRegistry() {
         this.listOfAllBooks = new ArrayList<>();
         this.authorList = new HashMap<>();
         this.genreList = new HashMap<>();
