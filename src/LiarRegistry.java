@@ -81,7 +81,7 @@ public class LiarRegistry {
 
 
     /**
-     * Putts all books by the same genre in to a HasMap with the name of the genre as key.
+     * Puts all books in the same genre in to a HashMap with the name of the genre as key.
      */
     private void sortToGenreMap() {
         ArrayList<Book> tmpNumberOfBooks = (ArrayList<Book>)this.listOfAllBooks.clone();
@@ -136,8 +136,8 @@ public class LiarRegistry {
     }
 
     /**
-     * Removes a book from the registry
-     * @param index The index of the book int the registry.
+     * Removes a book from the registry with the index as the identifier.
+     * @param index The index of the book in the registry.
      */
     private void removeBook(int index) {
         this.listOfAllBooks.remove(index);
@@ -145,6 +145,10 @@ public class LiarRegistry {
         sortToGenreMap();
     }
 
+    /**
+     * Removes a book from the Literature Registry with String as the identifier.
+     * @param title Title of the book
+     */
     public void removeBook(String title) {
         title = title.toLowerCase();
         for (int i = 0; i < this.listOfAllBooks.size(); i++) {
